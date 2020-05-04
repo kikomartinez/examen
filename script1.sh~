@@ -1,0 +1,3 @@
+read -p "Introduce el directorio: " directorio
+numero=` ls | wc -l`
+echo "En este directorio hay $numero de ficheros y directorios"
