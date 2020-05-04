@@ -19,5 +19,11 @@ while [ $contador -le $maxlineas ]; do
     contador=$((contador+1))
 done
 
-echo $ciudad1instructores
-echo $ciudad2instructores
+if [ $ciudad1instructores -gt $ciudad2instructores ]; then
+    echo "$ciudad1 tiene más instructores que $ciudad2"
+else if [ $ciudad2instructores -gt $ciudad1instructores ]; then
+    echo "$ciudad2 tiene más instructores que $ciudad1"
+else 
+    echo "$ciudad1 y $ciudad2 tienen el mismo número de instructores"
+fi
+fi
